@@ -23,17 +23,19 @@ def black_scholes_calculator(S, K, T, r, sigma):
 print("==================================================")
 print("💰 [Option Pricing Engine - CLI v1.0.0] 💰")
 print("==================================================")
-현재_주가 = float(input("📈 1. Underling Asset Price (S): "))
-행사_가격 = float(input("🎯 2. Strike Price (K): "))
-남은_시간 = float(input("⏳ 3. Time to Maturity in Years (T): "))
-기본_금리 = float(input("🏦 4. Risk-Free Interest Rate (r): "))
-주가_변동성 = float(input("⚡ 5. Asset Volatility (sigma): "))
+current_stock_price = float(input("📈 1. Underlying Asset Price (S) (현재 주가): "))
+strike_price = float(input("🎯 2. Strike Price (K) (행사 가격): "))
+time_to_maturity = float(input("⏳ 3. Time to Maturity in Years (T) (남은 만기 시간/년): "))
+risk_free_rate = float(input("🏦 4. Risk-Free Interest Rate (r) (무위험 이자율): "))
+asset_volatility = float(input("⚡ 5. Asset Volatility (sigma) (주가 변동성): "))
 
-콜옵션_가격, 풋옵션_가격 = black_scholes_calculator(현재_주가, 행사_가격, 남은_시간, 기본_금리, 주가_변동성)
+call_option_price, put_option_price = black_scholes_calculator(
+    current_stock_price, strike_price, time_to_maturity, risk_free_rate, asset_volatility
+)
 
 print("\n==================================================")
 print("✨ [Compilation Success - Execution Output] ✨")
 print("==================================================")
-print(f"💵 Call Option Value: {콜옵션_가격:.2f} 원")
-print(f"💵 Put Option Value: {풋옵션_가격:.2f} 원")
+print(f"💵 Call Option Value (콜옵션 가격): {call_option_price:.2f} KRW")
+print(f"💵 Put Option Value (풋옵션 가격): {put_option_price:.2f} KRW")
 print("==================================================")
