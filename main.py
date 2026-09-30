@@ -1,3 +1,9 @@
+import sys
+import io
+
+# Force terminal output to UTF-8 to prevent emoji errors (터미널 출력을 UTF-8로 강제 설정하여 이모지 에러 방지)
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
+
 import math
 from scipy.stats import norm
 
