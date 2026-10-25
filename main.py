@@ -12,9 +12,10 @@ def black_scholes_calculator(S, K, T, r, sigma):
     Calculate Black-Scholes Option Pricing for Call and Put Options (콜옵션과 풋옵션의 블랙-숄즈 옵션 가격을 계산합니다).
     Includes exception handling for Zero Division (sigma or T is 0) (시그마나 만기가 0일 때 발생하는 영분할 예외 처리를 포함합니다).
     """
-    # Check if sigma or T is less than or equal to 0 (시그마나 만기가 0 이하인지 확인합니다)
-    if sigma <= 0 or T <= 0:
+     # Check if inputs are valid (주가, 행사가, 시그마, 만기가 0 이하인지 확인합니다)
+    if S <= 0 or K <= 0 or sigma <= 0 or T <= 0:
         return 0.0, 0.0
+
 
     # Calculate the numerator and denominator for d1 (d1의 분자와 분모를 계산합니다)
     numerator = math.log(S / K) + (r + 0.5 * (sigma ** 2)) * T
