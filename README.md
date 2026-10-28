@@ -24,22 +24,17 @@ $$ d_2 = d_1 - \sigma\sqrt{t} $$
 * $t$ : Time to expiration in years (만기까지 남은 시간)
 
 ## 🛠️ Built With
-* Python 3.x
+* Python 3.14 (64-bit)
 * Math & SciPy libraries (for precise cumulative distribution function calculations)
 
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the application:
-   ```bash
-   python main.py
-   ```
+## 📥 How to Download & Run
+
+### 1. For General Users (Recommended!)
+1. Click **[👉 Download virtual-stock-trading.exe 📥](https://github.com/loveisworld732-del/black-scholes-calculator/releases/latest/download/exchange.exe)** to download the application directly.
+2. click the downloaded `.exe` file to run it. No Python installation required!
+
+### 2. For Developers (Source Code Execution)
+1. **[👉 edit code 👈](https://github.dev/loveisworld732-del/black-scholes-calculator/blob/main/main.py)** Click here to edit the code!
 
 ---
-🎈 *This project was built with deep curiosity by a 14-year-old student passionate about Financial Engineering and AI. If you find this codebase helpful or interesting, please review it and leave a ⭐ Star! Thank you!*
+🎈 *This project was built with passion by a 14-year-old developer from South Korea. If you want to support my coding journey, please leave a ⭐ Star! Thank you!*
